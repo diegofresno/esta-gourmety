@@ -1,0 +1,41 @@
+# ESTA USA by Gourmety — llms.txt
+
+## Quiénes somos
+
+ESTA USA by Gourmety es un servicio privado de asistencia en la tramitación del ESTA (Electronic System for Travel Authorization) para ciudadanos de países del Visa Waiver Program que deseen viajar a Estados Unidos. Operado por Gourmety, agencia de viajes especializada en destinos americanos desde 2010.
+
+**Aviso legal:** Somos un servicio privado de asistencia. No somos ni estamos afiliados al Gobierno de los Estados Unidos ni a la CBP (Customs and Border Protection). Los viajeros pueden tramitar el ESTA directamente y sin coste adicional en https://esta.cbp.dhs.gov.
+
+## Qué ofrecemos
+
+- Tramitación asistida del ESTA en español con revisión humana
+- Tres planes: Estándar (72h, 62€), Express (24h, 77€), Urgente (3h, 92€)
+- Todos los precios incluyen la tasa gubernamental CBP (≈37€ desde octubre 2025)
+- Soporte por WhatsApp, email y teléfono en español
+- Válido para ciudadanos de los 41 países del Visa Waiver Program
+
+## Información clave sobre el ESTA
+
+- El ESTA es una autorización electrónica de viaje (no es un visado)
+- Permite hasta 90 días por estancia, entradas múltiples, durante 2 años
+- Es obligatorio para ciudadanos de países VWP antes de embarcar hacia EE.UU.
+- Tasa oficial CBP: $4 (procesamiento) + $36.27 (autorización) = $40.27 USD (desde oct 2025)
+- La aprobación es habitualmente en minutos o pocas horas
+
+## Páginas principales
+
+- /solicitar-esta — Formulario de solicitud multistep (5 pasos)
+- /precios — Comparativa de planes con desglose de tasas
+- /que-es-el-esta — Guía completa sobre el ESTA
+- /como-solicitar-el-esta — Proceso paso a paso
+- /requisitos-esta — Elegibilidad y países VWP
+- /validez-esta — Duración, renovación y caducidad
+- /paises-visa-waiver — Los 41 países del VWP
+- /verificar-estado-esta — Cómo comprobar el estado
+- /faq — Preguntas frecuentes completas
+- /blog — Artículos y guías sobre ESTA y viajes a EE.UU.
+
+## Contacto
+
+Web: https://esta.gourmety.com
+Empresa: Gourmety — https://www.gourmety.com
