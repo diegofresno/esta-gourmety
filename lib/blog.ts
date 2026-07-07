@@ -11,6 +11,7 @@ export interface PostMeta {
   date: string
   keywords?: string[]
   image?: string
+  category?: string
   readingTime?: number
 }
 
@@ -34,6 +35,7 @@ export function getAllPosts(): PostMeta[] {
         date: data.date ?? '',
         keywords: data.keywords ?? [],
         image: data.image ?? null,
+        category: data.category ?? 'Guías',
         readingTime: Math.ceil(words / 200),
       } as PostMeta
     })
@@ -55,6 +57,7 @@ export function getPost(slug: string): Post | null {
         date: data.date ?? '',
         keywords: data.keywords ?? [],
         image: data.image ?? null,
+        category: data.category ?? 'Guías',
         readingTime: Math.ceil(words / 200),
         content,
       }
