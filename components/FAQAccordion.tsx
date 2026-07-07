@@ -3,31 +3,27 @@ import { useState } from 'react'
 
 interface FAQItem {
   q: string
-  a: string | React.ReactNode
+  a: string
 }
 
 export default function FAQAccordion({ items }: { items: FAQItem[] }) {
   const [open, setOpen] = useState<number | null>(null)
+
   return (
-    <div className="divide-y divide-gray-200">
+    <div style={{maxWidth:'800px',margin:'0 auto'}}>
       {items.map((item, i) => (
-        <div key={i} className="py-1">
+        <div key={i} style={{borderBottom:'1px solid #d8d9eb',overflow:'hidden'}}>
           <button
             onClick={() => setOpen(open === i ? null : i)}
-            className="w-full flex justify-between items-center py-4 text-left font-bold text-[1.55rem] text-[#07334d] hover:text-[#006b63] transition-colors"
+            style={{width:'100%',textAlign:'left',background:'none',border:'none',padding:'2rem 0',display:'flex',alignItems:'center',justifyContent:'space-between',gap:'1.6rem',cursor:'pointer',fontFamily:'"Martel Sans",Georgia,serif',fontSize:'1.7rem',fontWeight:700,color:'#473f4b',lineHeight:1.3}}
           >
             <span>{item.q}</span>
-            <svg
-              width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5"
-              strokeLinecap="round" strokeLinejoin="round"
-              className={`flex-shrink-0 ml-4 transition-transform ${open === i ? 'rotate-45' : ''}`}
-            >
-              <line x1="12" y1="5" x2="12" y2="19"/>
-              <line x1="5" y1="12" x2="19" y2="12"/>
-            </svg>
+            <span style={{flexShrink:0,width:'26px',height:'26px',borderRadius:'50%',border:'2px solid #d8d9eb',display:'flex',alignItems:'center',justifyContent:'center',color:'#07334d',transition:'transform .2s',transform:open===i?'rotate(45deg)':'rotate(0deg)'}}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
           </button>
           {open === i && (
-            <div className="pb-5 text-[1.5rem] text-gray-600 leading-relaxed pr-8">
+            <div style={{paddingBottom:'2rem',fontSize:'1.5rem',color:'#445462',lineHeight:1.7}}>
               {item.a}
             </div>
           )}

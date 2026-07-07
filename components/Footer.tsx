@@ -3,60 +3,53 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#07334d] text-white mt-20">
-      <div className="max-w-[1160px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
-        <div className="md:col-span-1">
-          <div className="flex items-center gap-2.5 mb-4">
-            <Image src="/logo-icon.png" alt="" width={30} height={30} className="rounded-sm" />
-            <span className="font-[Martel_Sans] font-black text-[1.5rem]">
-              ESTA USA <span className="font-normal text-white/40 text-[1.3rem]">by Gourmety</span>
-            </span>
+    <footer style={{background:'#031c2b',padding:'4rem',color:'rgba(255,255,255,.5)'}}>
+      <div style={{maxWidth:'1100px',margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr 1fr',gap:'3rem'}}>
+        <div>
+          <div style={{display:'flex',alignItems:'center',gap:'1rem',marginBottom:'1rem'}}>
+            <Image src="/logo-icon.png" alt="" width={36} height={36} style={{borderRadius:'8px',display:'block'}} />
+            <div style={{color:'#fff',fontFamily:'"Martel Sans",Georgia,serif',fontWeight:700,fontSize:'2rem',lineHeight:1.2}}>
+              ESTA USA
+              <span style={{color:'rgba(255,255,255,.4)',fontWeight:400,fontSize:'1.3rem',display:'block',lineHeight:1}}>by Gourmety</span>
+            </div>
           </div>
-          <p className="text-white/60 text-[1.35rem] leading-relaxed">
+          <p style={{fontSize:'1.3rem',color:'rgba(255,255,255,.45)',lineHeight:1.6,maxWidth:'280px'}}>
             Servicio de tramitación ESTA de Gourmety, agencia especializada en viajes a Estados Unidos y Canadá desde 2010.
           </p>
         </div>
 
         <div>
-          <h4 className="font-[Martel_Sans] font-bold text-[1.45rem] mb-4 text-white">Servicio</h4>
-          <div className="flex flex-col gap-2.5">
-            <FooterLink href="/que-es-el-esta">Qué es el ESTA</FooterLink>
-            <FooterLink href="/como-solicitar-el-esta">Cómo solicitarlo</FooterLink>
-            <FooterLink href="/precios">Precios</FooterLink>
-            <FooterLink href="/solicitar-esta">Solicitar ESTA</FooterLink>
-            <FooterLink href="/verificar-estado-esta">Ver estado solicitud</FooterLink>
-          </div>
+          <h4 style={{color:'rgba(255,255,255,.7)',fontSize:'1.3rem',fontWeight:700,letterSpacing:'.05em',textTransform:'uppercase',marginBottom:'1.4rem'}}>Servicio</h4>
+          <FooterLink href="/que-es-el-esta">Qué es el ESTA</FooterLink>
+          <FooterLink href="/como-solicitar-el-esta">Cómo solicitarlo</FooterLink>
+          <FooterLink href="/precios">Precios</FooterLink>
+          <FooterLink href="/solicitar-esta">Solicitar ESTA</FooterLink>
+          <FooterLink href="/verificar-estado-esta">Ver estado solicitud</FooterLink>
         </div>
 
         <div>
-          <h4 className="font-[Martel_Sans] font-bold text-[1.45rem] mb-4 text-white">Información</h4>
-          <div className="flex flex-col gap-2.5">
-            <FooterLink href="/requisitos-esta">Requisitos</FooterLink>
-            <FooterLink href="/validez-esta">Validez y renovación</FooterLink>
-            <FooterLink href="/paises-visa-waiver">Países VWP</FooterLink>
-            <FooterLink href="/faq">Preguntas frecuentes</FooterLink>
-            <FooterLink href="/blog">Blog</FooterLink>
-          </div>
+          <h4 style={{color:'rgba(255,255,255,.7)',fontSize:'1.3rem',fontWeight:700,letterSpacing:'.05em',textTransform:'uppercase',marginBottom:'1.4rem'}}>Información</h4>
+          <FooterLink href="/requisitos-esta">Requisitos</FooterLink>
+          <FooterLink href="/validez-esta">Validez y renovación</FooterLink>
+          <FooterLink href="/paises-visa-waiver">Países VWP</FooterLink>
+          <FooterLink href="/faq">Preguntas frecuentes</FooterLink>
+          <FooterLink href="/blog">Blog</FooterLink>
         </div>
 
         <div>
-          <h4 className="font-[Martel_Sans] font-bold text-[1.45rem] mb-4 text-white">Legal</h4>
-          <div className="flex flex-col gap-2.5">
-            <FooterLink href="/aviso-legal">Aviso legal</FooterLink>
-            <FooterLink href="/privacidad">Política de privacidad</FooterLink>
-            <FooterLink href="/condiciones">Condiciones de servicio</FooterLink>
-          </div>
+          <h4 style={{color:'rgba(255,255,255,.7)',fontSize:'1.3rem',fontWeight:700,letterSpacing:'.05em',textTransform:'uppercase',marginBottom:'1.4rem'}}>Legal</h4>
+          <FooterLink href="#">Aviso legal</FooterLink>
+          <FooterLink href="#">Política de privacidad</FooterLink>
+          <FooterLink href="#">Condiciones de servicio</FooterLink>
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="max-w-[1160px] mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <p className="text-[1.3rem] text-white/40 max-w-2xl">
-            <strong className="text-white/40">Aviso importante:</strong> ESTA USA by Gourmety es un servicio privado de asistencia en la tramitación y no está afiliado al Gobierno de los Estados Unidos. Los viajeros pueden solicitar el ESTA directamente y sin coste adicional en{' '}
-            <a href="https://esta.cbp.dhs.gov" target="_blank" rel="noopener noreferrer" className="underline text-white/30">esta.cbp.dhs.gov</a>.
-          </p>
-          <p className="text-white/30 text-[1.3rem] whitespace-nowrap">© 2026 Gourmety</p>
-        </div>
+      <div style={{maxWidth:'1100px',margin:'3rem auto 0',paddingTop:'2.4rem',borderTop:'1px solid rgba(255,255,255,.08)',fontSize:'1.2rem',color:'rgba(255,255,255,.3)',display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'2rem'}}>
+        <p style={{maxWidth:'700px',lineHeight:1.5}}>
+          <strong style={{color:'rgba(255,255,255,.4)'}}>Aviso importante:</strong> ESTA USA by Gourmety es un servicio privado de asistencia en la tramitación y no está afiliado al Gobierno de los Estados Unidos. Los viajeros pueden solicitar el ESTA directamente y sin coste adicional en{' '}
+          <a href="https://esta.cbp.dhs.gov" target="_blank" rel="noopener noreferrer" style={{color:'rgba(255,255,255,.35)',textDecoration:'underline'}}>esta.cbp.dhs.gov</a>.
+        </p>
+        <p style={{whiteSpace:'nowrap'}}>© 2026 Gourmety</p>
       </div>
     </footer>
   )
@@ -64,7 +57,7 @@ export default function Footer() {
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <Link href={href} className="text-white/60 hover:text-white text-[1.35rem] transition-colors">
+    <Link href={href} style={{display:'block',fontSize:'1.4rem',color:'rgba(255,255,255,.45)',marginBottom:'.7rem',transition:'color .2s',textDecoration:'none'}} className="footer-link">
       {children}
     </Link>
   )
