@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
 import { getPost, getAllPosts } from '@/lib/blog'
 import JsonLd from '@/components/JsonLd'
 
@@ -102,7 +103,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
           {/* Prose content */}
           <article className="prose">
-            <MDXRemote source={post.content} />
+            <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </article>
 
           {/* Back link */}
