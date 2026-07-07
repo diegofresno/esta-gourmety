@@ -1,13 +1,7 @@
 'use client'
 import { useState } from 'react'
 
-const PLANS = {
-  estandar: { name: 'Plan Estándar', total: 62, gestion: 25, time: '72 h', priceId: 'price_1TqCrFEsRS7JswWPxnmAsgvf' },
-  express:  { name: 'Plan Express',  total: 77, gestion: 40, time: '24 h', priceId: 'price_1TqCrlEsRS7JswWPmgkqke8e' },
-  urgente:  { name: 'Plan Urgente',  total: 92, gestion: 55, time: '3 h',  priceId: 'price_1TqCsJEsRS7JswWPgZtNVPxA' },
-} as const
-
-type PlanKey = keyof typeof PLANS
+const PLAN = { name: 'Plan Estándar', total: 62, gestion: 25, time: '72 h', priceId: 'price_1TqCrFEsRS7JswWPxnmAsgvf' }
 
 const VWP_COUNTRIES: [string, string][] = [
   ['ES','España'],['FR','Francia'],['DE','Alemania'],['IT','Italia'],['PT','Portugal'],
@@ -22,11 +16,10 @@ const VWP_COUNTRIES: [string, string][] = [
 
 export default function EstaForm() {
   const [step, setStep] = useState(1)
-  const [planKey, setPlanKey] = useState<PlanKey>('estandar')
   const [qty, setQty] = useState(1)
   const [loading, setLoading] = useState(false)
 
-  const plan = PLANS[planKey]
+  const plan = PLAN
   const total = plan.total * qty
 
   async function handleCheckout() {
@@ -96,23 +89,13 @@ export default function EstaForm() {
         <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
           <h2 className="font-[Martel_Sans] font-bold text-[1.8rem] text-[#07334d] mb-5">Resumen del pedido</h2>
 
-          {/* Plan selector */}
-          <div className="flex flex-col gap-2.5 mb-5">
-            {(Object.entries(PLANS) as [PlanKey, typeof PLANS[PlanKey]][]).map(([key, p]) => (
-              <button
-                key={key}
-                onClick={() => setPlanKey(key)}
-                className={`flex justify-between items-center p-3.5 rounded-xl border-2 text-left transition-all ${
-                  planKey === key ? 'border-[#006b63] bg-[#006b63]/5' : 'border-gray-200 hover:bg-gray-50'
-                }`}
-              >
-                <div>
-                  <div className="font-bold text-[1.35rem] text-[#07334d]">{p.name}</div>
-                  <div className="text-[1.15rem] text-gray-500">hasta {p.time} hábiles</div>
-                </div>
-                <div className="font-[Martel_Sans] font-black text-[1.6rem] text-[#006b63]">{p.total}€</div>
-              </button>
-            ))}
+          {/* Plan */}
+          <div className="flex justify-between items-center p-3.5 rounded-xl border-2 border-[#006b63] bg-[#006b63]/5 mb-5">
+            <div>
+              <div className="font-bold text-[1.35rem] text-[#07334d]">{plan.name}</div>
+              <div className="text-[1.15rem] text-gray-500">hasta {plan.time} hábiles</div>
+            </div>
+            <div className="font-[Martel_Sans] font-black text-[1.6rem] text-[#006b63]">{plan.total}€</div>
           </div>
 
           {/* Qty selector */}
@@ -310,7 +293,7 @@ function Step4({ onBack, onNext }: { onBack: () => void; onNext: () => void }) {
 }
 
 function Step5({ plan, qty, loading, onBack, onPay }: {
-  plan: typeof PLANS[PlanKey]; qty: number; loading: boolean; onBack: () => void; onPay: () => void
+  plan: typeof PLAN; qty: number; loading: boolean; onBack: () => void; onPay: () => void
 }) {
   return (
     <div>
