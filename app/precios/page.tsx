@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import PageHero from '@/components/PageHero'
 import JsonLd from '@/components/JsonLd'
 import FAQAccordion from '@/components/FAQAccordion'
 
@@ -96,20 +97,12 @@ export default function PreciosPage() {
         <JsonLd key={i} data={schema} />
       ))}
 
-      {/* Hero breadcrumb */}
-      <div className="bg-[#07334d] text-white py-10 px-6">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="text-[1.35rem] text-white/50 mb-2">
-            <Link href="/" className="hover:text-white/80">Inicio</Link> › Precios
-          </div>
-          <h1 className="font-[Martel_Sans] font-black text-[3.2rem] mb-2">
-            Precios del ESTA USA 2026
-          </h1>
-          <p className="text-white/70 text-[1.6rem]">
-            Tasa CBP oficial incluida en todos los planes. Sin costes ocultos.
-          </p>
-        </div>
-      </div>
+      <PageHero
+        breadcrumb={[{ label:'Inicio', href:'/' }, { label:'Precios' }]}
+        title="Precios del ESTA USA 2026"
+        subtitle="Tasa CBP oficial incluida en todos los planes. Sin costes ocultos."
+        pills={['Tasa CBP incluida', 'Sin costes ocultos', 'Pago seguro SSL']}
+      />
 
       {/* Content */}
       <div className="max-w-[860px] mx-auto px-6 py-14">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import PageHero from '@/components/PageHero'
 import JsonLd from '@/components/JsonLd'
 import FAQAccordion from '@/components/FAQAccordion'
 
@@ -52,20 +53,12 @@ export default function QueEsElEstaPage() {
     <>
       <JsonLd data={articleSchema} />
 
-      {/* Hero breadcrumb */}
-      <div className="bg-[#07334d] text-white py-10 px-6">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="text-[1.35rem] text-white/50 mb-2">
-            <Link href="/" className="hover:text-white/80">Inicio</Link> › Qué es el ESTA
-          </div>
-          <h1 className="font-[Martel_Sans] font-black text-[3.2rem] mb-2">
-            Qué es el ESTA USA
-          </h1>
-          <p className="text-white/70 text-[1.6rem]">
-            Todo lo que necesitas saber sobre la autorización electrónica de viaje a Estados Unidos
-          </p>
-        </div>
-      </div>
+      <PageHero
+        breadcrumb={[{ label:'Inicio', href:'/' }, { label:'Qué es el ESTA' }]}
+        title="Qué es el ESTA USA"
+        subtitle="Todo lo que necesitas saber sobre la autorización electrónica de viaje a Estados Unidos"
+        pills={['Guía completa', 'Actualizado 2026']}
+      />
 
       {/* Content */}
       <div className="max-w-[860px] mx-auto px-6 py-14">

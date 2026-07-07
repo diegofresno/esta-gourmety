@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PageHero from '@/components/PageHero'
 import EstaForm from './EstaForm'
 import JsonLd from '@/components/JsonLd'
 
@@ -25,19 +26,12 @@ export default function SolicitarEstaPage() {
   return (
     <>
       <JsonLd data={howToSchema} />
-      <div className="bg-[#07334d] text-white py-10 px-6">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="text-[1.35rem] text-white/50 mb-2">
-            <a href="/" className="hover:text-white/80">Inicio</a> › Solicitar ESTA
-          </div>
-          <h1 className="font-[Martel_Sans] font-black text-[3.2rem] mb-2">
-            Solicita tu ESTA para Estados Unidos
-          </h1>
-          <p className="text-white/70 text-[1.6rem]">
-            Rellena tus datos, nosotros nos encargamos del resto. Revisión humana incluida.
-          </p>
-        </div>
-      </div>
+      <PageHero
+        breadcrumb={[{ label:'Inicio', href:'/' }, { label:'Solicitar ESTA' }]}
+        title="Solicita tu ESTA para Estados Unidos"
+        subtitle="Rellena tus datos, nosotros nos encargamos del resto. Revisión humana incluida."
+        pills={['Desde 62€', 'Revisión humana incluida', 'Respuesta hasta 72 h']}
+      />
       <EstaForm />
     </>
   )

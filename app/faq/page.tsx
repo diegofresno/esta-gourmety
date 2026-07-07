@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import PageHero from '@/components/PageHero'
 import JsonLd from '@/components/JsonLd'
 import FAQAccordion from '@/components/FAQAccordion'
 
@@ -135,20 +136,12 @@ export default function FaqPage() {
     <>
       <JsonLd data={faqSchema} />
 
-      {/* Hero breadcrumb */}
-      <div className="bg-[#07334d] text-white py-10 px-6">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="text-[1.35rem] text-white/50 mb-2">
-            <Link href="/" className="hover:text-white/80">Inicio</Link> › FAQ
-          </div>
-          <h1 className="font-[Martel_Sans] font-black text-[3.2rem] mb-2">
-            Preguntas frecuentes sobre el ESTA
-          </h1>
-          <p className="text-white/70 text-[1.6rem]">
-            Respuestas claras a todas tus dudas sobre el ESTA USA, organizadas por categoría
-          </p>
-        </div>
-      </div>
+      <PageHero
+        breadcrumb={[{ label:'Inicio', href:'/' }, { label:'FAQ' }]}
+        title="Preguntas frecuentes sobre el ESTA"
+        subtitle="Respuestas claras a todas tus dudas sobre el ESTA USA, organizadas por categoría"
+        pills={['Actualizado 2026', 'Organizado por categoría']}
+      />
 
       {/* Content */}
       <div className="max-w-[860px] mx-auto px-6 py-14">

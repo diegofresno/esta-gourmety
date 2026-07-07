@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import PageHero from '@/components/PageHero'
 import JsonLd from '@/components/JsonLd'
 import FAQAccordion from '@/components/FAQAccordion'
 
@@ -83,20 +84,12 @@ export default function PaisesVisaWaiverPage() {
     <>
       <JsonLd data={faqSchema} />
 
-      {/* Hero breadcrumb */}
-      <div className="bg-[#07334d] text-white py-10 px-6">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="text-[1.35rem] text-white/50 mb-2">
-            <Link href="/" className="hover:text-white/80">Inicio</Link> › Países Visa Waiver
-          </div>
-          <h1 className="font-[Martel_Sans] font-black text-[3.2rem] mb-2">
-            Países del Visa Waiver Program
-          </h1>
-          <p className="text-white/70 text-[1.6rem]">
-            Lista completa de los 41 países cuyos ciudadanos pueden viajar a EE.UU. sin visado con el ESTA
-          </p>
-        </div>
-      </div>
+      <PageHero
+        breadcrumb={[{ label:'Inicio', href:'/' }, { label:'Países Visa Waiver' }]}
+        title="Países del Visa Waiver Program"
+        subtitle="Lista completa de los 41 países cuyos ciudadanos pueden viajar a EE.UU. sin visado con el ESTA"
+        pills={['41 países elegibles', 'España incluida']}
+      />
 
       {/* Content */}
       <div className="max-w-[860px] mx-auto px-6 py-14">

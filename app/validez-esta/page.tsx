@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import PageHero from '@/components/PageHero'
 import JsonLd from '@/components/JsonLd'
 import FAQAccordion from '@/components/FAQAccordion'
 
@@ -81,20 +82,12 @@ export default function ValidezEstaPage() {
       <JsonLd data={faqSchema} />
       <JsonLd data={howToSchema} />
 
-      {/* Hero breadcrumb */}
-      <div className="bg-[#07334d] text-white py-10 px-6">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="text-[1.35rem] text-white/50 mb-2">
-            <Link href="/" className="hover:text-white/80">Inicio</Link> › Validez del ESTA
-          </div>
-          <h1 className="font-[Martel_Sans] font-black text-[3.2rem] mb-2">
-            Validez y renovación del ESTA
-          </h1>
-          <p className="text-white/70 text-[1.6rem]">
-            Cuánto dura el ESTA, cuándo caduca y cómo gestionarlo para múltiples viajes
-          </p>
-        </div>
-      </div>
+      <PageHero
+        breadcrumb={[{ label:'Inicio', href:'/' }, { label:'Validez del ESTA' }]}
+        title="Validez y renovación del ESTA"
+        subtitle="Cuánto dura el ESTA, cuándo caduca y cómo gestionarlo para múltiples viajes"
+        pills={['2 años de vigencia', 'Entradas múltiples']}
+      />
 
       {/* Content */}
       <div className="max-w-[860px] mx-auto px-6 py-14">
