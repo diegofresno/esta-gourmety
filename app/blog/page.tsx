@@ -6,7 +6,7 @@ import JsonLd from '@/components/JsonLd'
 export const metadata: Metadata = {
   title: 'Blog ESTA USA — Guías y consejos para viajar a Estados Unidos',
   description: 'Artículos, guías y consejos sobre el ESTA, el Visa Waiver Program y los trámites para viajar a EE.UU. desde España y Europa.',
-  alternates: { canonical: 'https://esta.gourmety.com/blog' },
+  alternates: { canonical: 'https://estausa.es/blog' },
 }
 
 export default function BlogPage() {
@@ -18,7 +18,7 @@ export default function BlogPage() {
         '@context': 'https://schema.org',
         '@type': 'Blog',
         name: 'Blog ESTA USA by Gourmety',
-        url: 'https://esta.gourmety.com/blog',
+        url: 'https://estausa.es/blog',
         description: 'Guías y artículos sobre el ESTA y viajes a Estados Unidos',
       }} />
 

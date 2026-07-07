@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Verificar estado de tu ESTA USA — Comprueba tu autorización',
   description: 'Cómo verificar el estado de tu ESTA: Autorizado, Pendiente o No Autorizado. Instrucciones en español y enlace al verificador oficial de la CBP.',
-  alternates: { canonical: 'https://esta.gourmety.com/verificar-estado-esta' },
+  alternates: { canonical: 'https://estausa.es/verificar-estado-esta' },
 }
 
 const faqs = [

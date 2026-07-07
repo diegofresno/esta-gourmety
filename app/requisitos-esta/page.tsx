@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Requisitos para solicitar el ESTA USA — Lista completa 2026',
   description: 'Conoce todos los requisitos para solicitar el ESTA USA: países del VWP, tipo de pasaporte, restricciones por antecedentes o viajes a países conflictivos.',
-  alternates: { canonical: 'https://esta.gourmety.com/requisitos-esta' },
+  alternates: { canonical: 'https://estausa.es/requisitos-esta' },
 }
 
 const faqs = [

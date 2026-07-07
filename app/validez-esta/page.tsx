@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Validez del ESTA USA — Cuánto dura y cuándo renovarlo 2026',
   description: 'El ESTA es válido durante 2 años o hasta que caduca el pasaporte. Descubre cuánto dura, cuándo renovarlo y cuántas veces puedes entrar a EE.UU.',
-  alternates: { canonical: 'https://esta.gourmety.com/validez-esta' },
+  alternates: { canonical: 'https://estausa.es/validez-esta' },
 }
 
 const faqs = [
@@ -58,7 +58,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Si ha caducado o has cambiado de pasaporte, inicia la solicitud',
-      text: 'Accede a esta.gourmety.com/solicitar-esta y rellena el formulario con los datos del pasaporte nuevo (o el mismo si lo que ha caducado es el ESTA).',
+      text: 'Accede a estausa.es/solicitar-esta y rellena el formulario con los datos del pasaporte nuevo (o el mismo si lo que ha caducado es el ESTA).',
     },
     {
       '@type': 'HowToStep',

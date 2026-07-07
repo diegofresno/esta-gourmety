@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Qué es el ESTA USA — Guía completa 2026',
   description: 'El ESTA es la autorización electrónica de viaje para entrar a EE.UU. sin visado. Descubre qué es, quién lo necesita y cómo funciona.',
-  alternates: { canonical: 'https://esta.gourmety.com/que-es-el-esta' },
+  alternates: { canonical: 'https://estausa.es/que-es-el-esta' },
 }
 
 const faqs = [
@@ -37,11 +37,11 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Qué es el ESTA USA — Guía completa 2026',
   description: 'El ESTA es la autorización electrónica de viaje para entrar a EE.UU. sin visado. Descubre qué es, quién lo necesita y cómo funciona.',
-  url: 'https://esta.gourmety.com/que-es-el-esta',
+  url: 'https://estausa.es/que-es-el-esta',
   publisher: {
     '@type': 'Organization',
     name: 'ESTA USA by Gourmety',
-    url: 'https://esta.gourmety.com',
+    url: 'https://estausa.es',
   },
   datePublished: '2026-01-01',
   dateModified: '2026-07-01',

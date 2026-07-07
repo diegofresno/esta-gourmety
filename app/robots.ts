@@ -5,6 +5,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       { userAgent: '*', allow: '/', disallow: ['/api/', '/pago-completado', '/pago-cancelado'] },
     ],
-    sitemap: 'https://esta.gourmety.com/sitemap.xml',
+    sitemap: 'https://estausa.es/sitemap.xml',
   }
 }

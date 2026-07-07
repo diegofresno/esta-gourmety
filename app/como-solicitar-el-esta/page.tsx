@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Cómo solicitar el ESTA USA paso a paso 2026',
   description: 'Guía completa para solicitar el ESTA USA: documentos necesarios, pasos del formulario, tiempos de aprobación y qué hacer si te lo deniegan.',
-  alternates: { canonical: 'https://esta.gourmety.com/como-solicitar-el-esta' },
+  alternates: { canonical: 'https://estausa.es/como-solicitar-el-esta' },
 }
 
 const faqs = [
@@ -37,7 +37,7 @@ const howToSchema = {
   '@type': 'HowTo',
   name: 'Cómo solicitar el ESTA USA paso a paso',
   description: 'Guía paso a paso para solicitar el ESTA USA online',
-  url: 'https://esta.gourmety.com/como-solicitar-el-esta',
+  url: 'https://estausa.es/como-solicitar-el-esta',
   totalTime: 'PT15M',
   step: [
     {
@@ -50,7 +50,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Elige tu plan y rellena el formulario',
-      text: 'Accede al formulario en esta.gourmety.com/solicitar-esta, elige el plan (Estándar, Express o Urgente) e introduce los datos del pasaporte exactamente como aparecen.',
+      text: 'Accede al formulario en estausa.es/solicitar-esta, elige el plan (Estándar, Express o Urgente) e introduce los datos del pasaporte exactamente como aparecen.',
     },
     {
       '@type': 'HowToStep',
@@ -149,7 +149,7 @@ export default function ComoSolicitarEstaPage() {
               {
                 n: '1',
                 t: 'Accede al formulario de solicitud',
-                d: 'Visita esta.gourmety.com/solicitar-esta. Elige el número de viajeros (puedes tramitar varios en una misma solicitud) y selecciona el plan que se ajusta a tus plazos: Estándar (hasta 72h), Express (hasta 24h) o Urgente (hasta 3h).',
+                d: 'Visita estausa.es/solicitar-esta. Elige el número de viajeros (puedes tramitar varios en una misma solicitud) y selecciona el plan que se ajusta a tus plazos: Estándar (hasta 72h), Express (hasta 24h) o Urgente (hasta 3h).',
               },
               {
                 n: '2',

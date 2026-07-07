@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'ESTA USA — Tramitación asistida en español',
   description: 'Solicita tu ESTA para viajar a Estados Unidos con revisión humana y soporte en español. Aprobación en 72h. Desde 62€ con tasa CBP incluida.',
-  alternates: { canonical: 'https://esta.gourmety.com' },
+  alternates: { canonical: 'https://estausa.es' },
 }
 
 const faqs = [

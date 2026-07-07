@@ -5,7 +5,7 @@ import JsonLd from '@/components/JsonLd'
 export const metadata: Metadata = {
   title: 'Solicitar ESTA USA — Tramitación asistida en español',
   description: 'Solicita tu ESTA para Estados Unidos online con revisión humana. Formulario en español. Aprobación en 72h, 24h o 3h. Desde 62€ con tasa CBP incluida.',
-  alternates: { canonical: 'https://esta.gourmety.com/solicitar-esta' },
+  alternates: { canonical: 'https://estausa.es/solicitar-esta' },
 }
 
 const howToSchema = {

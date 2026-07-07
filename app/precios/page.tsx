@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Precios ESTA USA 2026 — Cuánto cuesta tramitarlo con Gourmety',
   description: 'Precios actualizados del ESTA USA en 2026: tasa CBP oficial + gestión. Planes Estándar 62€, Express 77€ y Urgente 92€ con revisión humana incluida.',
-  alternates: { canonical: 'https://esta.gourmety.com/precios' },
+  alternates: { canonical: 'https://estausa.es/precios' },
 }
 
 const faqs = [
@@ -78,14 +78,14 @@ const productSchemas = plans.map((plan) => ({
   '@type': 'Product',
   name: `ESTA USA — Plan ${plan.name}`,
   description: `Tramitación asistida del ESTA con revisión humana y soporte en español. Plazo: ${plan.time}.`,
-  url: 'https://esta.gourmety.com/precios',
+  url: 'https://estausa.es/precios',
   brand: { '@type': 'Brand', name: 'ESTA USA by Gourmety' },
   offers: {
     '@type': 'Offer',
     price: plan.price,
     priceCurrency: 'EUR',
     availability: 'https://schema.org/InStock',
-    url: 'https://esta.gourmety.com/solicitar-esta',
+    url: 'https://estausa.es/solicitar-esta',
   },
 }))
 

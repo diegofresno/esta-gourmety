@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
 
-const BASE = 'https://esta.gourmety.com'
+const BASE = 'https://estausa.es'
 
 const staticPages = [
   { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },

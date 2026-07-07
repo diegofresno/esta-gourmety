@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Preguntas frecuentes sobre el ESTA USA — FAQ completo 2026',
   description: 'Resuelve todas tus dudas sobre el ESTA: qué es, requisitos, solicitud, precios, validez, estados y más. Respuestas en español por expertos.',
-  alternates: { canonical: 'https://esta.gourmety.com/faq' },
+  alternates: { canonical: 'https://estausa.es/faq' },
 }
 
 const faqsQueEs = [

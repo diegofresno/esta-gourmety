@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 export const metadata: Metadata = {
   title: 'Países del Visa Waiver Program — Lista completa 2026',
   description: 'Lista de los 41 países del Visa Waiver Program que pueden solicitar el ESTA para viajar a EE.UU. sin visado. España, Alemania, Francia y más.',
-  alternates: { canonical: 'https://esta.gourmety.com/paises-visa-waiver' },
+  alternates: { canonical: 'https://estausa.es/paises-visa-waiver' },
 }
 
 const faqs = [

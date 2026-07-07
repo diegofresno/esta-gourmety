@@ -5,14 +5,14 @@ import Footer from '@/components/Footer'
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://esta.gourmety.com'),
+  metadataBase: new URL('https://estausa.es'),
   title: {
     default: 'ESTA USA — Tramitación asistida en español | ESTA USA by Gourmety',
     template: '%s | ESTA USA by Gourmety',
   },
   description: 'Tramita tu ESTA para Estados Unidos con revisión humana incluida. En español. Aprobación en 72h, 24h o 3h. Desde 62€ con tasa CBP incluida.',
   keywords: ['esta usa', 'solicitar esta', 'esta estados unidos', 'tramitar esta'],
-  alternates: { canonical: 'https://esta.gourmety.com' },
+  alternates: { canonical: 'https://estausa.es' },
   openGraph: {
     type: 'website',
     locale: 'es_ES',
@@ -26,8 +26,8 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'ESTA USA by Gourmety',
-  url: 'https://esta.gourmety.com',
-  logo: 'https://esta.gourmety.com/logo-icon.png',
+  url: 'https://estausa.es',
+  logo: 'https://estausa.es/logo-icon.png',
   sameAs: ['https://www.gourmety.com'],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -40,10 +40,10 @@ const webSiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'ESTA USA by Gourmety',
-  url: 'https://esta.gourmety.com',
+  url: 'https://estausa.es',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://esta.gourmety.com/blog?q={search_term_string}',
+    target: 'https://estausa.es/blog?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 }

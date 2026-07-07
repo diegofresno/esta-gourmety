@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.title,
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: `https://esta.gourmety.com/blog/${slug}` },
+    alternates: { canonical: `https://estausa.es/blog/${slug}` },
     openGraph: {
       type: 'article',
       title: post.title,
       description: post.description,
-      url: `https://esta.gourmety.com/blog/${slug}`,
+      url: `https://estausa.es/blog/${slug}`,
       publishedTime: post.date,
     },
   }
@@ -44,9 +44,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     publisher: {
       '@type': 'Organization',
       name: 'ESTA USA by Gourmety',
-      logo: { '@type': 'ImageObject', url: 'https://esta.gourmety.com/logo-icon.png' },
+      logo: { '@type': 'ImageObject', url: 'https://estausa.es/logo-icon.png' },
     },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://esta.gourmety.com/blog/${slug}` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://estausa.es/blog/${slug}` },
   }
 
   return (

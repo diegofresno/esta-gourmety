@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
   }
 
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://esta.gourmety.com'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://estausa.es'
 
   try {
     const session = await stripe.checkout.sessions.create({
