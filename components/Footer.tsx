@@ -38,9 +38,9 @@ export default function Footer() {
 
         <div>
           <h4 style={{color:'rgba(255,255,255,.7)',fontSize:'1.3rem',fontWeight:700,letterSpacing:'.05em',textTransform:'uppercase',marginBottom:'1.4rem'}}>Legal</h4>
-          <FooterLink href="#">Aviso legal</FooterLink>
-          <FooterLink href="#">Política de privacidad</FooterLink>
-          <FooterLink href="#">Condiciones de servicio</FooterLink>
+          <FooterLink href="/aviso-legal">Aviso legal</FooterLink>
+          <FooterLink href="/politica-de-privacidad">Política de privacidad</FooterLink>
+          <FooterLink href="/politica-de-cookies">Política de cookies</FooterLink>
         </div>
       </div>
 
