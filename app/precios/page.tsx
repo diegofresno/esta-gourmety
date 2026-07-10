@@ -74,7 +74,7 @@ const plans = [
   },
 ]
 
-const productSchemas = plans.map((plan) => ({
+const productSchemas = plans.filter(p => p.name === 'Estándar').map((plan) => ({
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: `ESTA USA — Plan ${plan.name}`,
@@ -115,21 +115,12 @@ export default function PreciosPage() {
           <p className="text-[1.55rem] text-gray-700 leading-relaxed mb-8">
             Todos los planes incluyen la <strong>tasa gubernamental completa de la CBP</strong> (~37€), revisión humana de la solicitud y tramitación ante el sistema oficial de EE.UU. La diferencia entre planes es el tiempo de gestión garantizado.
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {plans.map((plan) => (
+          <div className="flex justify-center">
+            {plans.filter(p => p.name === 'Estándar').map((plan) => (
               <div
                 key={plan.name}
-                className={`rounded-2xl p-8 border-2 flex flex-col relative ${
-                  plan.featured
-                    ? 'border-[#006b63] bg-white shadow-xl'
-                    : 'border-gray-200 bg-white'
-                }`}
+                className="rounded-2xl p-8 border-2 flex flex-col relative border-[#006b63] bg-white shadow-xl w-full max-w-sm"
               >
-                {plan.featured && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#006b63] text-white text-[1.2rem] font-bold px-4 py-1 rounded-full whitespace-nowrap">
-                    Más popular
-                  </div>
-                )}
                 <div className="font-[Martel_Sans] font-bold text-[1.8rem] text-[#07334d] mb-1">
                   {plan.name}
                 </div>
@@ -147,11 +138,7 @@ export default function PreciosPage() {
                 </ul>
                 <Link
                   href="/solicitar-esta"
-                  className={`block text-center font-bold text-[1.5rem] py-3 rounded-xl transition-colors ${
-                    plan.featured
-                      ? 'bg-[#e8533a] hover:bg-[#d4442c] text-white'
-                      : 'bg-[#07334d] hover:bg-[#0a4a6b] text-white'
-                  }`}
+                  className="block text-center font-bold text-[1.5rem] py-3 rounded-xl transition-colors bg-[#e8533a] hover:bg-[#d4442c] text-white"
                 >
                   Elegir {plan.name} →
                 </Link>
@@ -183,8 +170,6 @@ export default function PreciosPage() {
                   ['Tasa de autorización CBP (Authorization Fee)', '~19€ (~21 USD)', 'Solo si deniegan'],
                   ['Total tasa CBP', '~37€ (~42 USD en total)', '—'],
                   ['Honorarios Gourmety — Estándar', '25€', 'No'],
-                  ['Honorarios Gourmety — Express', '40€', 'No'],
-                  ['Honorarios Gourmety — Urgente', '55€', 'No'],
                 ].map(([c, i, r], idx) => (
                   <tr key={idx} className={idx % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                     <td className="px-4 py-3 text-gray-700">{c}</td>
