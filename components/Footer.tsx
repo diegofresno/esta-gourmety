@@ -16,6 +16,7 @@ export default function Footer() {
           <p style={{fontSize:'1.3rem',color:'rgba(255,255,255,.45)',lineHeight:1.6,maxWidth:'280px'}}>
             Servicio de tramitación ESTA de Gourmety, agencia especializada en viajes a Estados Unidos y Canadá desde 2010.
           </p>
+          <a href="mailto:esta@gourmety.com" style={{display:'inline-block',marginTop:'.8rem',fontSize:'1.3rem',color:'rgba(255,255,255,.5)',textDecoration:'none'}}>esta@gourmety.com</a>
         </div>
 
         <div>
