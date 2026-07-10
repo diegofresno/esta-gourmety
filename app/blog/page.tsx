@@ -90,7 +90,7 @@ export default function BlogPage() {
 
         {/* Featured post */}
         {featured && (
-          <article style={{display:'grid',gridTemplateColumns:'42% 1fr',gap:0,borderRadius:'16px',overflow:'hidden',border:'1.5px solid #e2e8f0',boxShadow:'0 4px 24px rgba(7,51,77,.07)',marginBottom:'5.5rem',background:'#fff'}}>
+          <article className="blog-featured-card" style={{gap:0,borderRadius:'16px',overflow:'hidden',border:'1.5px solid #e2e8f0',boxShadow:'0 4px 24px rgba(7,51,77,.07)',marginBottom:'5.5rem',background:'#fff'}}>
             <div style={{position:'relative',minHeight:'300px'}}>
               <Image
                 src={featured.image ?? DEFAULT_IMAGE}
@@ -124,7 +124,7 @@ export default function BlogPage() {
             <h2 style={{fontFamily:'"Martel Sans",Georgia,serif',fontSize:'2rem',fontWeight:700,color:'#07334d',margin:'0 0 2.8rem',paddingBottom:'1.4rem',borderBottom:'2px solid #e8edf2'}}>
               Todos los artículos
             </h2>
-            <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'2.8rem'}}>
+            <div className="blog-articles-grid">
               {rest.map(post => <ArticleCard key={post.slug} post={post} />)}
             </div>
           </>

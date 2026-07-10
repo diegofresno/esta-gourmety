@@ -85,7 +85,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       </div>
 
       {/* Content + sidebar grid */}
-      <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '5.5rem 2.4rem 7rem', display: 'grid', gridTemplateColumns: '1fr 300px', gap: '4.8rem', alignItems: 'start' }}>
+      <div className="blog-post-layout" style={{ maxWidth: '1100px', margin: '0 auto', padding: '5.5rem 2.4rem 7rem' }}>
 
         {/* Left: article */}
         <div>
@@ -115,7 +115,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         </div>
 
         {/* Right: sticky sidebar */}
-        <aside style={{ alignSelf: 'stretch' }}>
+        <aside className="blog-post-aside" style={{ alignSelf: 'stretch' }}>
           <div style={{ background: '#fff', border: '1.5px solid #e2e8f0', borderRadius: '16px', padding: '2.8rem', position: 'sticky', top: '88px', boxShadow: '0 4px 24px rgba(7,51,77,.07)' }}>
             <div style={{ width: '48px', height: '48px', background: 'linear-gradient(135deg,#07334d,#006b63)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.6rem' }}>
               <svg width="22" height="22" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>

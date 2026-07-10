@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <footer style={{background:'#031c2b',padding:'4rem',color:'rgba(255,255,255,.5)'}}>
-      <div style={{maxWidth:'1100px',margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr 1fr',gap:'3rem'}}>
+      <div className="footer-main-grid" style={{maxWidth:'1100px',margin:'0 auto'}}>
         <div>
           <div style={{display:'flex',alignItems:'center',gap:'1rem',marginBottom:'1rem'}}>
             <Image src="/logo-icon.png" alt="" width={36} height={36} style={{borderRadius:'8px',display:'block'}} />
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div style={{maxWidth:'1100px',margin:'3rem auto 0',paddingTop:'2.4rem',borderTop:'1px solid rgba(255,255,255,.08)',fontSize:'1.2rem',color:'rgba(255,255,255,.3)',display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'2rem'}}>
+      <div className="footer-bottom-bar" style={{maxWidth:'1100px',margin:'3rem auto 0',paddingTop:'2.4rem',borderTop:'1px solid rgba(255,255,255,.08)',fontSize:'1.2rem',color:'rgba(255,255,255,.3)'}}>
         <p style={{maxWidth:'700px',lineHeight:1.5}}>
           <strong style={{color:'rgba(255,255,255,.4)'}}>Aviso importante:</strong> ESTA USA by Gourmety es un servicio privado de asistencia en la tramitación y no está afiliado al Gobierno de los Estados Unidos. Los viajeros pueden solicitar el ESTA directamente y sin coste adicional en{' '}
           <a href="https://esta.cbp.dhs.gov" target="_blank" rel="noopener noreferrer" style={{color:'rgba(255,255,255,.35)',textDecoration:'underline'}}>esta.cbp.dhs.gov</a>.
