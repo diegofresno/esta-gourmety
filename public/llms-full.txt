@@ -1,0 +1,205 @@
+# ESTA USA by Gourmety — Contenido completo para LLMs
+
+## Sobre este sitio
+
+ESTA USA by Gourmety es un servicio privado de asistencia en la tramitación del ESTA (Electronic System for Travel Authorization) para ciudadanos de países del Visa Waiver Program que deseen viajar a Estados Unidos. Operado por Gourmety Viajes S.L. (NIF B52538170), agencia de viajes especializada en destinos americanos desde 2010.
+
+Aviso importante: Somos un servicio privado de asistencia. No somos ni estamos afiliados al Gobierno de los Estados Unidos ni a la CBP. Los viajeros pueden tramitar el ESTA directamente y sin coste adicional en https://esta.cbp.dhs.gov.
+
+Web: https://estausa.es
+Empresa: Gourmety — https://www.gourmety.com
+Contacto: esta@gourmety.com
+
+---
+
+## Información clave sobre el servicio
+
+- Tramitación asistida del ESTA en español con revisión humana
+- Tres planes: Estándar (72h, 62€), Express (24h, 77€), Urgente (3h, 92€)
+- Todos los precios incluyen la tasa gubernamental CBP (~37€ desde octubre 2025)
+- Soporte por WhatsApp, email y teléfono en español
+- Válido para ciudadanos de los 42 países del Visa Waiver Program
+
+---
+
+## Páginas principales
+
+- /solicitar-esta — Formulario de solicitud multistep (5 pasos)
+- /precios — Comparativa de planes con desglose de tasas
+- /que-es-el-esta — Guía completa sobre el ESTA
+- /como-solicitar-el-esta — Proceso paso a paso
+- /requisitos-esta — Elegibilidad y países VWP
+- /validez-esta — Duración, renovación y caducidad
+- /paises-visa-waiver — Los 42 países del VWP
+- /verificar-estado-esta — Cómo comprobar el estado
+- /faq — Preguntas frecuentes completas
+- /blog — Artículos y guías sobre ESTA y viajes a EE.UU.
+
+---
+
+## Blog: artículos completos
+
+---
+
+### Qué es el ESTA para viajar a Estados Unidos: guía completa 2026
+URL: https://estausa.es/blog/que-es-el-esta-guia-completa-2026
+Fecha: 2026-07-06
+
+El ESTA (Electronic System for Travel Authorization) es una autorización electrónica de viaje gestionada por la CBP (U.S. Customs and Border Protection). No es un visado. Una vez aprobada, queda vinculada electrónicamente al pasaporte del viajero: no hay sello, papel ni documento físico.
+
+El ESTA permite a ciudadanos de países del Visa Waiver Program entrar a EE.UU. sin visado para turismo, negocios cortos o tránsito. España está incluida en el VWP desde 1991.
+
+Lo que permite el ESTA: turismo, negocios cortos, tránsito, entradas múltiples durante 2 años, hasta 90 días por estancia.
+
+Lo que NO permite: trabajar, estudiar en programas formales de larga duración, estancias superiores a 90 días, inmigrar.
+
+Quién NO puede usar el ESTA: ciudadanos que desde 2011 hayan viajado a Irán, Irak, Libia, Corea del Norte, Somalia, Sudán, Siria o Yemen; quienes hayan viajado a Cuba en cualquier momento; personas con antecedentes penales, deportaciones previas o visado americano denegado; quienes tengan doble nacionalidad con un país restringido.
+
+Precio en 2026: $40.27 USD (tasa CBP) desde octubre 2025. Antes costaba $21 USD. Se divide en $4 de procesamiento (siempre) y $36.27 de autorización (solo si se aprueba).
+
+Tiempo de tramitación: minutos u horas en la práctica; hasta 72 horas oficialmente. Recomendable tramitar con 72h de antelación mínima o idealmente 1-2 semanas antes del vuelo.
+
+Validez: 2 años desde la aprobación, o hasta que caduque el pasaporte (lo primero que ocurra). Entradas múltiples, hasta 90 días cada una.
+
+Cuándo renovar: cuando caduca el ESTA, cuando se cambia de pasaporte, cuando cambian las respuestas de elegibilidad, o al adquirir otra nacionalidad. No hay renovación: se solicita uno nuevo desde cero.
+
+Datos necesarios: pasaporte biométrico vigente (número, fechas), dirección en EE.UU., número de vuelo, email válido, tarjeta de crédito o débito.
+
+Proceso: rellenar formulario → pagar tasa → recibir resultado por email. El ESTA aprobado queda en los sistemas de la CBP; la aerolínea lo verifica automáticamente al hacer check-in.
+
+---
+
+### ESTA vs Visado para EE.UU.: cuándo necesitas cada uno
+URL: https://estausa.es/blog/esta-vs-visado-eeuu-cuando-necesitas-cada-uno
+Fecha: 2026-07-02
+
+El ESTA es para ciudadanos del VWP, no requiere entrevista, se tramita online en minutos-72h, cuesta $40.27 USD, es válido 2 años con entradas múltiples de hasta 90 días.
+
+El visado B-1/B-2 lo emite la Embajada de EE.UU. tras entrevista presencial obligatoria, tarda 2-12 semanas, cuesta $185 USD, y permite hasta 6 meses por entrada.
+
+Cuándo usar el ESTA: ciudadano de país VWP + pasaporte biométrico + turismo/negocios cortos + menos de 90 días + sin historial complicado.
+
+Cuándo necesitas visado aunque seas español:
+1. Viajes desde 2011 a Irán, Irak, Libia, Corea del Norte, Somalia, Sudán, Siria o Yemen; o a Cuba en cualquier momento.
+2. Estancias superiores a 90 días.
+3. Trabajo remunerado en EE.UU.
+4. Estudios de larga duración (necesita visado F-1).
+5. Antecedentes penales, deportación previa o visado denegado anteriormente.
+6. Doble nacionalidad con país restringido.
+
+Una denegación del ESTA no es definitiva: permite solicitar visado B-2 en la embajada.
+
+---
+
+### Cuánto cuesta el ESTA en 2026: historial de precios y tasa actual
+URL: https://estausa.es/blog/precio-esta-2026-cuanto-cuesta
+Fecha: 2026-07-01
+
+Precio oficial 2026: $40.27 USD desde el 19 de septiembre de 2025.
+- $4.00 USD: tasa de procesamiento (siempre, aunque se deniegue)
+- $36.27 USD: tasa de autorización (solo si se aprueba)
+
+Historial: 2009-2010: $10 USD. 2010-2025: $21 USD. Desde sep. 2025: $40.27 USD.
+
+Los servicios privados de tramitación cobran un adicional sobre la tasa CBP. ESTA USA by Gourmety: Estándar 72h 62€, Express 24h 77€, Urgente 3h 92€. Todos incluyen la tasa CBP.
+
+No hay reembolso en caso de denegación. El precio es el mismo para todas las nacionalidades VWP y para todas las edades (incluyendo bebés).
+
+---
+
+### Qué es el Visa Waiver Program y qué países pueden usarlo
+URL: https://estausa.es/blog/visa-waiver-program-que-es
+Fecha: 2026-07-06
+
+El Visa Waiver Program (VWP) es un acuerdo de reciprocidad creado en 1986 (operativo desde 1988) que permite a ciudadanos de 42 países entrar a EE.UU. para turismo o negocios cortos sin visado, usando el ESTA en su lugar. España está en el VWP desde 1991.
+
+Los 42 países participantes (2026):
+Europa: Alemania, Andorra, Austria, Bélgica, Croacia, Chipre, Dinamarca, Eslovaquia, Eslovenia, España, Estonia, Finlandia, Francia, Grecia, Hungría, Irlanda, Islandia, Italia, Letonia, Liechtenstein, Lituania, Luxemburgo, Malta, Mónaco, Noruega, Países Bajos, Polonia, Portugal, Reino Unido, República Checa, San Marino, Suecia, Suiza.
+Asia-Pacífico: Australia, Brunéi, Corea del Sur, Japón, Nueva Zelanda, Singapur, Taiwán.
+Américas: Chile.
+
+Condiciones del VWP: ser ciudadano del VWP + pasaporte biométrico + ESTA aprobado + turismo/negocios cortos + máximo 90 días + no haber visitado países restringidos desde 2011 + no haber viajado a Cuba.
+
+Al entrar bajo el VWP se renuncia al derecho de impugnar ante un juez una orden de deportación. Con visado B-2 sí existe ese derecho.
+
+---
+
+### La web oficial del ESTA (CBP): cómo identificarla y evitar fraudes
+URL: https://estausa.es/blog/web-oficial-esta-cbp-como-evitar-fraudes
+Fecha: 2026-07-05
+
+La única web oficial para tramitar el ESTA es: https://esta.cbp.dhs.gov (dominio .gov garantiza web gubernamental).
+
+Señales de que estás en la web oficial: URL exacta esta.cbp.dhs.gov, dominio .gov, formulario en inglés, precio total $40.27 USD.
+
+Señales de alerta de webs fraudulentas: URL diferente, tarifas muy elevadas (>100€) sin explicar que son honorarios de gestión, no mencionan la alternativa gratuita, no tienen datos fiscales claros, el documento que emiten tiene logo de la empresa en lugar de la confirmación CBP.
+
+Diferencia entre web oficial y servicios privados legítimos:
+- Web oficial CBP: $40.27 USD solo, en inglés, sin revisión ni soporte en español.
+- Servicios privados legítimos: cobran adicional por formulario en español, revisión humana previa, soporte y seguimiento. El ESTA que tramitan es el mismo (lo emite la CBP). Deben informar de la alternativa gratuita.
+
+Si te han estafado: contactar con el banco (chargeback), verificar el ESTA en esta.cbp.dhs.gov con número de pasaporte, denunciar en incibe.es/ciudadanos/reportar.
+
+---
+
+### ESTA para viajar a Nueva York desde España: todo lo que necesitas
+URL: https://estausa.es/blog/esta-para-viajar-nueva-york
+Fecha: 2026-07-07
+
+El ESTA es válido para entrar a cualquier ciudad de EE.UU., incluyendo Nueva York. No es específico por ciudad ni estado.
+
+Documentación necesaria: pasaporte biométrico español vigente + ESTA aprobado + billete de avión (recomendable llevar) + dirección de alojamiento en Nueva York.
+
+Cuándo pedir el ESTA: mínimo 72h antes del vuelo, óptimo 1-2 semanas antes. No se puede tramitar en el aeropuerto ni en el avión; debe estar aprobado antes de embarcar. La aerolínea lo verifica automáticamente en el check-in.
+
+Aeropuertos de Nueva York: JFK (Queens, principal para vuelos desde España), Newark Liberty (New Jersey), LaGuardia (principalmente domésticos). El proceso de entrada CBP es idéntico en los tres.
+
+Proceso en el control CBP: cola de "Visa Waiver/ESTA" → escaneo de pasaporte y huellas → preguntas básicas (motivo del viaje, alojamiento, duración) → sello en pasaporte.
+
+Estancia: hasta 90 días por entrada. El agente CBP determina la duración al entrar. Si se va a Canadá y se vuelve, se inicia nuevo período de 90 días al re-entrar a EE.UU.
+
+---
+
+### Solicitar el ESTA para toda la familia: guía completa
+URL: https://estausa.es/blog/esta-para-toda-la-familia
+Fecha: 2026-07-04
+
+El ESTA es estrictamente individual. Cada viajero, incluyendo bebés y menores, necesita su propio ESTA. No existe ESTA familiar.
+
+Para tramitar el ESTA de un menor: pasaporte biométrico vigente del menor (bebés necesitan su propio pasaporte desde 2010), número y fechas del pasaporte, email de contacto (puede ser el del adulto), dirección de alojamiento en EE.UU. Cualquier adulto puede rellenar el formulario del menor.
+
+Proceso para tramitar múltiples ESTA: reunir todos los pasaportes → tramitar una solicitud por persona → puede usarse el mismo email para todas → guardar los números de solicitud de cada miembro.
+
+Coste familiar orientativo (plan Estándar con gestión): 1 persona 62€, 2 personas 124€, 3 personas 186€, 4 personas 248€.
+
+Errores habituales: mezclar datos de pasaportes, pasaportes de menores caducados (2 años para menores de 5 en España), no tener pasaporte biométrico, tramitar tarde, olvidar que el ESTA caduca con el pasaporte si se renueva.
+
+---
+
+### Cómo descargar el ESTA aprobado: paso a paso
+URL: https://estausa.es/blog/como-descargar-el-esta-aprobado
+Fecha: 2026-07-03
+
+El ESTA aprobado no tiene documento físico descargable. La CBP no envía ningún PDF. El ESTA queda registrado electrónicamente vinculado al número de pasaporte.
+
+Lo que sí se puede hacer: consultar el estado en esta.cbp.dhs.gov (con número de pasaporte + fecha de nacimiento), hacer captura de pantalla de la confirmación, guardar el email de confirmación del servicio de tramitación.
+
+Para verificar el ESTA: ir a esta.cbp.dhs.gov → "Comprobar estado de solicitud existente" → introducir número de solicitud o (número de pasaporte + fecha de nacimiento + país). Estados posibles: Autorización aprobada (puede viajar), Autorización pendiente (esperar hasta 72h), Autorización denegada (solicitar visado B-2).
+
+En el aeropuerto: solo se necesita el pasaporte. La aerolínea verifica el ESTA automáticamente en el check-in. No hay que imprimir nada.
+
+Verificar antes de viajar: ESTA aprobado, fecha de caducidad posterior al vuelo, número de pasaporte del ESTA coincide con el pasaporte que se va a llevar.
+
+Validez: 2 años desde la aprobación o hasta que caduque el pasaporte (lo primero que ocurra). Entradas múltiples, hasta 90 días por estancia. Si se renueva el pasaporte, el ESTA del anterior ya no sirve.
+
+Si el ESTA caduca durante el viaje: no pasa nada. Lo que cuenta es la fecha de entrada, no la caducidad del ESTA. Una vez dentro, la duración la determina el agente CBP (habitualmente hasta 90 días).
+
+---
+
+## Datos de contacto y empresa
+
+Empresa: Gourmety Viajes S.L.
+NIF: B52538170
+Web: https://estausa.es
+Email: esta@gourmety.com
+Empresa matriz: https://www.gourmety.com

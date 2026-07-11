@@ -35,6 +35,10 @@ ESTA USA by Gourmety es un servicio privado de asistencia en la tramitación del
 - /faq — Preguntas frecuentes completas
 - /blog — Artículos y guías sobre ESTA y viajes a EE.UU.
 
+## Versión extendida
+
+Contenido completo del sitio (artículos de blog incluidos): https://estausa.es/llms-full.txt
+
 ## Contacto
 
 Web: https://estausa.es

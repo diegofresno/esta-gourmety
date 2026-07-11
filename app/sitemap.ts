@@ -3,35 +3,29 @@ import { getAllPosts } from '@/lib/blog'
 
 const BASE = 'https://estausa.es'
 
-const staticPages = [
-  { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },
-  { url: '/solicitar-esta', priority: 0.95, changeFrequency: 'monthly' as const },
-  { url: '/precios', priority: 0.9, changeFrequency: 'monthly' as const },
-  { url: '/que-es-el-esta', priority: 0.85, changeFrequency: 'monthly' as const },
-  { url: '/como-solicitar-el-esta', priority: 0.85, changeFrequency: 'monthly' as const },
-  { url: '/requisitos-esta', priority: 0.8, changeFrequency: 'monthly' as const },
-  { url: '/validez-esta', priority: 0.8, changeFrequency: 'monthly' as const },
-  { url: '/paises-visa-waiver', priority: 0.75, changeFrequency: 'monthly' as const },
-  { url: '/verificar-estado-esta', priority: 0.75, changeFrequency: 'monthly' as const },
-  { url: '/faq', priority: 0.75, changeFrequency: 'monthly' as const },
-  { url: '/blog', priority: 0.7, changeFrequency: 'weekly' as const },
-]
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts().map(p => ({
-    url: `${BASE}/blog/${p.slug}`,
-    lastModified: new Date(p.date),
+  const posts = getAllPosts()
+
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: BASE, priority: 1.0, changeFrequency: 'weekly' },
+    { url: `${BASE}/solicitar-esta`, priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${BASE}/precios`, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${BASE}/que-es-el-esta`, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${BASE}/como-solicitar-el-esta`, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${BASE}/blog`, priority: 0.8, changeFrequency: 'weekly' },
+    { url: `${BASE}/requisitos-esta`, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${BASE}/validez-esta`, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${BASE}/paises-visa-waiver`, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${BASE}/faq`, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${BASE}/verificar-estado-esta`, priority: 0.6, changeFrequency: 'monthly' },
+  ]
+
+  const blogPages: MetadataRoute.Sitemap = posts.map(post => ({
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: post.date ? new Date(post.date) : undefined,
+    priority: 0.7,
     changeFrequency: 'monthly' as const,
-    priority: 0.65,
   }))
 
-  return [
-    ...staticPages.map(p => ({
-      url: `${BASE}${p.url}`,
-      lastModified: new Date(),
-      changeFrequency: p.changeFrequency,
-      priority: p.priority,
-    })),
-    ...posts,
-  ]
+  return [...staticPages, ...blogPages]
 }
