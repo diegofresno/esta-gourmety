@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     images: [{ url: '/og-default.png', width: 1200, height: 630 }],
   },
   robots: { index: true, follow: true },
+  verification: { google: '4BoHWErEkXJ07C9TguGDUeaqpgjOYPWux8HofO161nE' },
 }
 
 const orgSchema = {
