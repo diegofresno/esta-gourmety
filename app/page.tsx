@@ -125,7 +125,7 @@ export default function HomePage() {
         <div className="hero-slide" style={{backgroundImage:"url('https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=1920&q=85&fit=crop')",backgroundPosition:'center center'}}></div>
         <div className="hero-slide" style={{backgroundImage:"url('https://cdn.travelwebmanager.com/tws-own-product/tours/464/1627370422.6623/las%20vegas.jpg')",backgroundPosition:'center 40%'}}></div>
         <div style={{position:'absolute',inset:0,background:'linear-gradient(105deg,rgba(3,28,43,.95) 0%,rgba(3,28,43,.88) 30%,rgba(7,51,77,.72) 55%,rgba(7,51,77,.38) 100%)',zIndex:1}}></div>
-        <div style={{maxWidth:'1200px',margin:'0 auto',padding:'6rem 4rem 5rem',minHeight:'620px',display:'grid',gridTemplateColumns:'1fr 460px',gap:'5rem',alignItems:'center',position:'relative',zIndex:2}}>
+        <div className="hero-grid">
           <div>
             <div style={{display:'inline-flex',alignItems:'center',gap:'.7rem',background:'rgba(198,54,34,.18)',border:'1px solid rgba(198,54,34,.4)',color:'#f5a898',padding:'.5rem 1.2rem',borderRadius:'20px',fontSize:'1.3rem',fontWeight:600,marginBottom:'2rem'}}>
               ✈ Especialistas en viajes a EE.UU. desde 2010
@@ -133,7 +133,7 @@ export default function HomePage() {
             <h1 style={{fontFamily:'"Martel Sans",Georgia,serif',fontSize:'4.2rem',fontWeight:900,color:'#fff',lineHeight:1.15,marginBottom:'1.8rem'}}>
               Tu ESTA para<br/>Estados Unidos,<br/><em style={{color:'#f5a898',fontStyle:'normal'}}>sin complicaciones</em>
             </h1>
-            <p style={{color:'rgba(255,255,255,.75)',fontSize:'1.8rem',marginBottom:'3rem',lineHeight:1.5}}>
+            <p style={{color:'rgba(255,255,255,.75)',fontSize:'1.8rem',marginBottom:'2.4rem',lineHeight:1.5}}>
               Nos encargamos de toda la gestión. Tú solo nos das los datos y nosotros tramitamos la autorización ESTA ante la CBP en tu nombre.
             </p>
             <div style={{display:'flex',flexWrap:'wrap',gap:'1.5rem'}}>
@@ -146,20 +146,25 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+            <Link href="/solicitar-esta" className="hero-mobile-cta">
+              Tramitar mi ESTA →
+            </Link>
           </div>
-          <HeroFormCard />
+          <div className="hero-form-col">
+            <HeroFormCard />
+          </div>
         </div>
       </div>
 
       {/* ── CÓMO FUNCIONA ────────────────────────── */}
-      <section style={{background:'#fafbfc',padding:'8rem 4rem'}} id="como-funciona">
+      <section className="sec" style={{background:'#fafbfc',padding:'8rem 4rem'}} id="como-funciona">
         <div style={{maxWidth:'1100px',margin:'0 auto'}}>
           <div style={{textAlign:'center',marginBottom:'5rem'}}>
             <div style={{display:'inline-block',background:'rgba(198,54,34,.1)',color:'#c63622',fontSize:'1.2rem',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',padding:'.4rem 1rem',borderRadius:'20px',marginBottom:'1.2rem'}}>Proceso</div>
             <h2 style={{fontFamily:'"Martel Sans",Georgia,serif',fontSize:'3.2rem',fontWeight:800,color:'#473f4b',lineHeight:1.2,marginBottom:'1.2rem'}}>Cuatro pasos, sin sorpresas</h2>
             <p style={{fontSize:'1.7rem',color:'#445462',maxWidth:'580px',lineHeight:1.6,margin:'0 auto'}}>Nosotros hacemos el trabajo. Tú solo necesitas tu pasaporte y unos minutos.</p>
           </div>
-          <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'2rem'}}>
+          <div className="steps-grid">
             {steps.map((s, i) => (
               <div key={i} style={{background:'#fff',borderRadius:'12px',padding:'2.6rem 2rem',textAlign:'center',boxShadow:'0 4px 24px rgba(3,28,43,.12)',position:'relative'}}>
                 <div style={{position:'absolute',top:'1.4rem',left:'1.4rem',width:'26px',height:'26px',borderRadius:'50%',background:s.color,color:'#fff',fontFamily:'"Martel Sans",Georgia,serif',fontSize:'1.2rem',fontWeight:800,display:'flex',alignItems:'center',justifyContent:'center'}}>{i+1}</div>
@@ -175,7 +180,7 @@ export default function HomePage() {
       </section>
 
       {/* ── PRICING (solo plan Estándar) ─────────── */}
-      <section style={{background:'#fff',padding:'8rem 4rem'}} id="precios">
+      <section className="sec" style={{background:'#fff',padding:'8rem 4rem'}} id="precios">
         <div style={{maxWidth:'1100px',margin:'0 auto'}}>
           <div style={{textAlign:'center',marginBottom:'4rem'}}>
             <div style={{display:'inline-block',background:'rgba(198,54,34,.1)',color:'#c63622',fontSize:'1.2rem',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',padding:'.4rem 1rem',borderRadius:'20px',marginBottom:'1.2rem'}}>Tarifas</div>
@@ -210,14 +215,14 @@ export default function HomePage() {
       </section>
 
       {/* ── POR QUÉ ELEGIRNOS ────────────────────── */}
-      <section style={{background:'#031c2b',padding:'8rem 4rem'}}>
+      <section className="sec" style={{background:'#031c2b',padding:'8rem 4rem'}}>
         <div style={{maxWidth:'1100px',margin:'0 auto'}}>
           <div style={{marginBottom:'4rem'}}>
             <div style={{display:'inline-block',background:'rgba(255,255,255,.1)',color:'rgba(255,255,255,.7)',fontSize:'1.2rem',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',padding:'.4rem 1rem',borderRadius:'20px',marginBottom:'1.2rem'}}>Por qué elegirnos</div>
             <h2 style={{fontFamily:'"Martel Sans",Georgia,serif',fontSize:'3.2rem',fontWeight:800,color:'#fff',lineHeight:1.2,marginBottom:'1.2rem'}}>Expertos en viajes a EE.UU.<br/>desde hace más de 15 años</h2>
             <p style={{fontSize:'1.7rem',color:'rgba(255,255,255,.65)',maxWidth:'580px',lineHeight:1.6}}>No somos una agencia genérica de trámites. Somos la agencia española especializada en viajes americanos y sabemos lo que el viajero español necesita.</p>
           </div>
-          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'4rem',alignItems:'center'}}>
+          <div className="why-grid">
             <div style={{display:'grid',gap:'2rem'}}>
               {whyFeatures.map((f,i) => (
                 <div key={i} style={{display:'flex',gap:'1.8rem',alignItems:'flex-start'}}>
@@ -231,7 +236,7 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'2rem'}}>
+            <div className="stats-grid">
               {stats.map((s,i) => (
                 <div key={i} style={{background:'rgba(255,255,255,.05)',border:'1px solid rgba(255,255,255,.1)',borderRadius:'12px',padding:'2.4rem',textAlign:'center'}}>
                   <div style={{fontFamily:'"Martel Sans",Georgia,serif',fontSize:'4rem',fontWeight:900,color:'#fff',lineHeight:1,marginBottom:'.4rem'}}>
@@ -246,13 +251,13 @@ export default function HomePage() {
       </section>
 
       {/* ── REVIEWS ──────────────────────────────── */}
-      <section style={{background:'#fafbfc',padding:'8rem 4rem'}}>
+      <section className="sec" style={{background:'#fafbfc',padding:'8rem 4rem'}}>
         <div style={{maxWidth:'1100px',margin:'0 auto'}}>
           <div style={{textAlign:'center',marginBottom:'4rem'}}>
             <div style={{display:'inline-block',background:'rgba(198,54,34,.1)',color:'#c63622',fontSize:'1.2rem',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',padding:'.4rem 1rem',borderRadius:'20px',marginBottom:'1.2rem'}}>Valoraciones</div>
             <h2 style={{fontFamily:'"Martel Sans",Georgia,serif',fontSize:'3.2rem',fontWeight:800,color:'#473f4b',lineHeight:1.2}}>Lo que dicen nuestros viajeros</h2>
           </div>
-          <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'2rem'}}>
+          <div className="reviews-grid">
             {reviews.map((r,i) => (
               <div key={i} style={{background:'#fff',borderRadius:'12px',padding:'2.4rem',boxShadow:'0 4px 24px rgba(3,28,43,.12)'}}>
                 <div style={{color:'#f59e0b',fontSize:'1.8rem',marginBottom:'1.2rem',letterSpacing:'.1em'}}>★★★★★</div>
@@ -278,7 +283,7 @@ export default function HomePage() {
       </section>
 
       {/* ── FAQ ──────────────────────────────────── */}
-      <section style={{background:'#fff',padding:'8rem 4rem'}} id="faq">
+      <section className="sec" style={{background:'#fff',padding:'8rem 4rem'}} id="faq">
         <div style={{maxWidth:'1100px',margin:'0 auto'}}>
           <div style={{textAlign:'center',marginBottom:'4rem'}}>
             <div style={{display:'inline-block',background:'rgba(198,54,34,.1)',color:'#c63622',fontSize:'1.2rem',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',padding:'.4rem 1rem',borderRadius:'20px',marginBottom:'1.2rem'}}>Preguntas frecuentes</div>
@@ -289,7 +294,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────── */}
-      <section style={{background:'linear-gradient(135deg,#a82c1b 0%,#c63622 100%)',padding:'6rem 4rem',textAlign:'center'}}>
+      <section className="sec" style={{background:'linear-gradient(135deg,#a82c1b 0%,#c63622 100%)',padding:'6rem 4rem',textAlign:'center'}}>
         <h2 style={{fontFamily:'"Martel Sans",Georgia,serif',fontSize:'3.6rem',fontWeight:900,color:'#fff',marginBottom:'1.2rem'}}>¿Listo para viajar a EE.UU.?</h2>
         <p style={{color:'rgba(255,255,255,.8)',fontSize:'1.8rem',marginBottom:'3rem'}}>Tramita tu ESTA ahora y ten la autorización lista en hasta 72 horas</p>
         <Link href="/solicitar-esta" style={{display:'inline-flex',alignItems:'center',gap:'.8rem',background:'#fff',color:'#c63622',padding:'1.4rem 3.2rem',borderRadius:'10px',fontFamily:'"Martel Sans",Georgia,serif',fontSize:'1.7rem',fontWeight:700,boxShadow:'0 4px 20px rgba(0,0,0,.2)',textDecoration:'none'}}>

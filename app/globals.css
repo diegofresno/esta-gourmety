@@ -233,3 +233,92 @@ img { max-width: 100%; display: block; }
 @media (max-width: 600px) {
   .r-px-4 { padding-left: 2rem !important; padding-right: 2rem !important; }
 }
+
+/* ── HOME PAGE RESPONSIVE ─── */
+
+/* Hero content grid */
+.hero-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 4rem 5rem;
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 4rem 2rem 3.5rem;
+    gap: 0;
+  }
+  .hero-form-col { display: none !important; }
+  .hero-mobile-cta {
+    display: inline-flex !important;
+    align-items: center;
+    gap: .6rem;
+    margin-top: 2.4rem;
+    background: #c63622;
+    color: #fff;
+    font-family: "Martel Sans",Georgia,serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 1.2rem 2.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+}
+@media (min-width: 961px) {
+  .hero-mobile-cta { display: none !important; }
+}
+
+/* Steps grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
+
+/* Why section: features + stats */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+/* Stats 2×2 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Reviews grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .reviews-grid { grid-template-columns: 1fr; }
+}
+
+/* Section padding reduce on mobile */
+@media (max-width: 600px) {
+  .sec { padding-left: 2rem !important; padding-right: 2rem !important;
+         padding-top: 5rem !important; padding-bottom: 5rem !important; }
+}
