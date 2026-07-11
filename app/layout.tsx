@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
@@ -58,6 +59,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={webSiteSchema} />
       </head>
       <body className="min-h-full flex flex-col">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YK09K99VJW" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YK09K99VJW');
+        `}</Script>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
