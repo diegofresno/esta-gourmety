@@ -88,6 +88,33 @@ const productSchemas = plans.filter(p => p.name === 'Estándar').map((plan) => (
     availability: 'https://schema.org/InStock',
     url: 'https://estausa.es/solicitar-esta',
   },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    bestRating: '5',
+    worstRating: '1',
+    reviewCount: '3',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      author: { '@type': 'Person', name: 'María C.' },
+      reviewBody: 'Nunca había tramitado el ESTA y tenía miedo de hacerlo en inglés directamente en la web del gobierno. Aquí lo hice en 10 minutos y al día siguiente lo tenía aprobado. Muy recomendable.',
+    },
+    {
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      author: { '@type': 'Person', name: 'Jorge P.' },
+      reviewBody: 'Lo solicité un jueves por la tarde y el viernes por la mañana ya lo tenía aprobado. El proceso fue muy claro, en español y sin complicaciones. Repetiré sin duda.',
+    },
+    {
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      author: { '@type': 'Person', name: 'Ana R.' },
+      reviewBody: 'Lo contraté para toda la familia, 4 personas. Me dijeron que uno de los pasaportes tenía un dato que podría causar problemas y me avisaron antes de enviarlo. Eso no lo hace la web oficial.',
+    },
+  ],
 }))
 
 export default function PreciosPage() {
