@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 *, *::before, *::after { box-sizing: border-box; }
-html { font-size: 62.5%; scroll-behavior: smooth; overflow-x: hidden; }
+html { font-size: 62.5%; scroll-behavior: smooth; overflow-x: clip; }
 
 body {
   font-family: "Nunito Sans", system-ui, sans-serif;
@@ -12,7 +12,7 @@ body {
   background: #fff;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5 {
@@ -165,6 +165,32 @@ img { max-width: 100%; display: block; }
   border-radius: 8px; overflow-x: auto; margin: 2rem 0;
 }
 .prose pre code { background: none; color: inherit; padding: 0; }
+
+/* ── FAQ ACCORDION (details/summary) ─── */
+.prose details {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.prose summary {
+  padding: 1.4rem 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #07334d;
+  font-family: "Martel Sans", Georgia, serif;
+  font-size: 1.7rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.prose summary::-webkit-details-marker { display: none; }
+.prose summary::after { content: '+'; color: #006b63; font-size: 2rem; font-weight: 400; }
+.prose details[open] summary::after { content: '−'; }
+.prose details[open] { background: #f8fafc; }
+.prose details > *:not(summary) { padding: 0 1.6rem 1.4rem; }
 
 /* ── RESPONSIVE GRIDS ─── */
 
