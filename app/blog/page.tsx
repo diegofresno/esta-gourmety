@@ -31,7 +31,7 @@ function formatDate(d: string) {
 export default function BlogPage() {
   const posts = getAllPosts()
   const featured = posts[0] ?? null
-  const rest = posts
+  const rest = posts.slice(1)
 
   return (
     <>
