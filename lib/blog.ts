@@ -39,7 +39,11 @@ export function getAllPosts(): PostMeta[] {
         readingTime: Math.ceil(words / 200),
       } as PostMeta
     })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .sort((a, b) => {
+      const diff = new Date(b.date).getTime() - new Date(a.date).getTime()
+      if (diff !== 0) return diff
+      return b.slug.localeCompare(a.slug)
+    })
 }
 
 export function getPost(slug: string): Post | null {
